@@ -1,6 +1,6 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/SKRHBI1vzdo
+ * @see https://v0.dev/t/WamybeBxbip
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
 import { Button } from "@/components/ui/button";
@@ -8,31 +8,17 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 
 export default function Component() {
 	return (
-		<div className="flex h-screen w-full items-start">
-			<div className="grid w-full max-w-7xl grid-cols-1 gap-4 px-4 md:grid-cols-3 md:gap-8">
-				<div className="flex items-center">
-					<div className="grid gap-1">
-						<h1 className="text-2xl font-bold leading-none">
-							Central de Organização da Equipe
-						</h1>
-						<p className="text-sm leading-5 text-gray-500 dark:text-gray-400">
-							Gerencie tarefas e projetos
-						</p>
-					</div>
-					<Button className="ml-auto w-8 h-8" size="icon" variant="outline">
-						<PlusIcon className="w-4 h-4" />
-						<span className="sr-only">Adicionar</span>
-					</Button>
-				</div>
-				<div className="col-span-2">
-					<div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-						<div className="rounded-lg border dark:border-gray-800">
-							<div>
+		<div className="flex flex-col h-screen w-full items-start">
+			<div className="grid w-full h-full grid-cols-1 gap-4 px-4 md:grid-cols-3 md:gap-8 flex-1">
+				<div className="col-span-2 h-full">
+					<div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8 h-full">
+						<div className="rounded-lg border dark:border-gray-800 h-full">
+							<div className="h-full">
 								<div className="p-4">
 									<h2 className="font-semibold text-lg">A Fazer</h2>
 								</div>
-								<div>
-									<div className="p-4">
+								<div className="h-full">
+									<div className="p-4 max-w-full	">
 										<Card className="mb-4" variant="muted">
 											<div className="flex items-center gap-4">
 												<GripHorizontalIcon className="w-4 h-4 text-gray-500 dark:text-gray-400 handle cursor-move" />
@@ -101,12 +87,12 @@ export default function Component() {
 								</div>
 							</div>
 						</div>
-						<div className="rounded-lg border dark:border-gray-800">
-							<div>
+						<div className="rounded-lg border dark:border-gray-800 h-full">
+							<div className="h-full">
 								<div className="p-4">
 									<h2 className="font-semibold text-lg">Em Progresso</h2>
 								</div>
-								<div>
+								<div className="h-full">
 									<div className="p-4">
 										<Card className="mb-4" variant="muted">
 											<div className="flex items-center gap-4">
@@ -143,46 +129,9 @@ export default function Component() {
 								</div>
 							</div>
 						</div>
-						<div className="rounded-lg border dark:border-gray-800">
-							<div>
-								<div className="p-4">
-									<h2 className="font-semibold text-lg">Concluído</h2>
-								</div>
-								<div>
-									<div className="p-4">
-										<Card className="mb-4" variant="muted">
-											<div className="flex items-center gap-4">
-												<GripHorizontalIcon className="w-4 h-4 text-gray-500 dark:text-gray-400 handle cursor-move" />
-												<div className="flex-1">
-													<CardTitle className="text-sm font-normal">
-														Escrever notas de lançamento
-													</CardTitle>
-													<CardDescription className="text-sm font-normal">
-														Destacar novas funcionalidades
-													</CardDescription>
-												</div>
-												<div className="flex gap-2 text-xs">
-													<Button
-														className="w-6 h-6 rounded-full border"
-														size="icon"
-														variant="outline"
-													>
-														<FileEditIcon className="w-4 h-4" />
-														<span className="sr-only">Editar</span>
-													</Button>
-													<Button
-														className="w-6 h-6 rounded-full border"
-														size="icon"
-														variant="outline"
-													>
-														<TrashIcon className="w-4 h-4" />
-														<span className="sr-only">Excluir</span>
-													</Button>
-												</div>
-											</div>
-										</Card>
-									</div>
-								</div>
+						<div className="rounded-lg border dark:border-gray-800 h-full">
+							<div className="h-full">
+								<div className="p-4" />
 							</div>
 						</div>
 					</div>
